@@ -1,67 +1,64 @@
 
 # Currency Converter App
 
-This project was developed for **Java backend specialization** from **Alura's Oracle One** program.
-The Currency Converter App consist in a command-line Java application that allows users to perform currency conversions in real-time using an external API.   
-Users can choose between converting a specific currency amount to a single target currency or to get exchange rate for multiple currencies at once.  
-The main goal of this project was learning different aspects of Java programming including API integration, managing JSON data, and implementing organized code structure.
+   This project was developed for **Java backend specialization** from **Alura's Oracle One** program.
+   The Currency Converter App consist in a command-line Java application that allows users to perform currency conversions in real-time using an external API.   
+   Users can choose between converting a specific currency amount to a single target currency or to get exchange rate for multiple currencies at once.  
+   The main goal of this project was learning different aspects of Java programming including API integration, managing JSON data, and implementing organized code structure.
 
 ## Installation and Setup
-To set up and use the Currency Converter App, follow these steps:
-
-1. **Clone the Repository:**
-Clone the repository to your local machine using Git or download the ZIP file.
-```console
-git clone <repository-url>
-```
-2. Configure Dependencies with Maven
-This project uses Maven to manage dependencies and build the application.
-
-Gson: Gson is already configured as a dependency in the pom.xml file.
-To make sure all dependencies are installed, navigate to the project root and run:
-
-```console
-mvn clean install
-```
-
-3. **Obtain an API Key:**
-To use the exchange rate API, you must obtain an API key from [ExchangeRate-API](https://app.exchangerate-api.com/sign-up).  
-Follow these steps:
-- Visit ExchangeRate-API to sign up.
-- After signing up, a free API key will be sent to your email.
-4. **Configure API Key:**
-Once you have your API key, you need to configure it for the app to use:
-
-- Navigate to the src/main/resources folder in your project directory.
-
-- Locate an already existing file named config.properties.
-
-- ***Replace YOUR_API_KEY with the actual key***:
-```
-exchangeRate.key=YOUR_API_KEY
-```
-5. **Build and Run the Application with Maven:**
-After setting up the API key, you can build and run the application using Maven.
-```
-mvn package
-
-```
-6. **Run the application:**
-```
-mvn exec:java -Dexec.mainClass="com.alura.currency_converter.CurrencyConverterApp"
-
-```
+   To set up and use the Currency Converter App, follow these steps:
+   
+   1. **Clone the Repository:**   
+      Clone the repository to your local machine using Git or download the ZIP file.
+         ```console
+         git clone https://github.com/manuel-gcl/challenge-oracle-currencyConverter.git
+         ```
+   2. **Configure dependencies with Maven:**   
+      This project uses Maven to manage dependencies and build the application.
+      
+      - Gson is already configured as a dependency in the pom.xml file.
+         To make sure all dependencies are installed, navigate to the project root and run:
+        ```console
+        mvn clean install
+        ```
+   
+   3. **Obtain an API Key:**   
+      To use the exchange rate API, you must obtain an API key from [ExchangeRate-API](https://app.exchangerate-api.com/sign-up).  
+      Follow these steps:
+         - Visit ExchangeRate-API to sign up.
+         - After signing up, a free API key will be sent to your email.
+   4. **Configure API Key:**   
+   Once you have your API key, you need to configure it for the app to use:
+   
+      - Navigate to the src/main/resources folder in your project directory.
+   
+      - Locate an already existing file named config.properties.
+   
+      - ***Replace YOUR_API_KEY with the actual key***:
+         ```
+         exchangeRate.key=YOUR_API_KEY
+         ```
+   5. **Build and Run the Application with Maven:**
+      After setting up the API key, you can build and run the application using Maven.
+      ```console
+      mvn package
+      ```
+   6. **Run the application:**   
+      ```console
+      mvn exec:java -Dexec.mainClass="com.alura.currency_converter.CurrencyConverterApp"
+      ```
 
 ## Usage:
-```
-********************************
-Please select an option:
-1. One-to-One Conversion
-2. One-to-Many Conversion
-3. View Conversion History
-4. Exit
-********************************
-```
+   ```
+   ********************************
+   Please select an option:
+   1. One-to-One Conversion
+   2. One-to-Many Conversion
+   3. View Conversion History
+   4. Exit
+   ********************************
+   ```
    
 1. **One-to-One Conversion**  
 Select 1 to perform a currency conversion from one base currency to a single target currency.
